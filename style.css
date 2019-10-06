@@ -1,0 +1,96 @@
+#kadesh{
+	width: 72%;
+	height: 36px;
+}
+
+body{
+	color: green;
+	margin: 0px;
+}
+
+.whole{
+	width: 100vw;
+	height: 100vh;
+	display: flex;
+}
+
+#speaking-container, #listening-container{
+	height: 100%;
+	width: 50%;
+	flex-direction: column;
+}
+#listening-container{
+    overflow: auto;
+    flex-wrap: nowrap;
+}
+
+div{
+	border: 1px solid gray;
+}
+
+#speaking-container >div{
+	height: 50%;
+	width: 100%
+	display: flex;
+}
+#form{
+	display: flex;
+	flex-direction: column;
+
+}
+#form div{
+	disply: flex;
+	
+
+}
+.teaching{
+	margin: 18px;
+	border-radius: 7px;	
+
+}
+.child {
+	min-height: 18px;
+	padding: 7px;
+	border-radius: 3px;
+}
+
+.action{
+	border-color: green;
+}
+
+.thought{
+	border-color: blue;
+}
+.service{
+	
+border-color: gold;
+}
+.public{
+	border-color: orange;
+}
+
+.child > div{
+	right:0px;
+}
+
+li{
+	list-style: none;
+}
+
+input{
+	margin: 7px;
+	border-radius: 3px;
+}
+
+button{
+    border-radius: 7px;
+    border-radius: 50%;
+    background-color: pink;
+    border-color: pink;
+    text-align: center;
+}
+
+#submitter{
+	background-color: pink;
+	border-color: pink;
+}
