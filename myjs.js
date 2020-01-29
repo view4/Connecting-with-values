@@ -285,5 +285,19 @@ for (var i = 0; i<multipliers.length; i++){
 	multipliers[i].addEventListener('click', multiplier)
 }
 
+/*
+So I want to be doing two things here. First off this is something which is very special too me and so I feel anxious just sharing it, because it is something which is close to my heart. Yet I also think it is an oppurtunity to glorify Hashem and so this is what I seek to be doing. 
 
+1) I wish to share this on my portfolio 
+- speak of them 
+- love the L-rd
+- cleave to Him
+- swear by His name 
+- add fringes to the corner (for people to see)
+2) I want to improve the design aspect of this 
+- incorporate consciousness
+- love the L-rd
+- Do not make a graven image- speak of them.
+
+*/
 

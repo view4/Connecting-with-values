@@ -1,10 +1,10 @@
 #kadesh{
-	width: 72%;
+	width: 100%;
 	height: 36px;
 }
 
 body{
-	color: green;
+	/*color: green;*/
 	margin: 0px;
 }
 
@@ -12,6 +12,11 @@ body{
 	width: 100vw;
 	height: 100vh;
 	display: flex;
+}
+.form-container {
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
 
 #speaking-container, #listening-container{
@@ -30,16 +35,20 @@ div{
 
 #speaking-container >div{
 	height: 50%;
-	width: 100%
+	width: 100%;
 	display: flex;
+	justify-content: center; 
+	align-items: center;
+	flex-wrap: wrap;
 }
 #form{
 	display: flex;
 	flex-direction: column;
+	align-items: center;
 
 }
 #form div{
-	disply: flex;
+	display: flex;
 	
 
 }
@@ -52,21 +61,21 @@ div{
 	min-height: 18px;
 	padding: 7px;
 	border-radius: 3px;
+	margin: 7px;
 }
 
 .action{
-	border-color: green;
+	background-color: rgba(219, 95, 231, 0.55);
 }
 
 .thought{
-	border-color: blue;
+	background-color: rgba(31, 158, 212, 0.44);;
 }
 .service{
-	
-border-color: gold;
+	background-color: #fff64fc4;
 }
 .public{
-	border-color: orange;
+	background-color: rgba(12,12,12,0.2);
 }
 
 .child > div{
@@ -93,4 +102,16 @@ button{
 #submitter{
 	background-color: pink;
 	border-color: pink;
+}
+
+h4 {
+	margin: 10px;
+}
+.teaching > div {
+	padding: 7px;
+}
+
+ul {
+	margin-bottom: 0px;
+	margin-top: 3px;
 }

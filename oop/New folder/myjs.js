@@ -68,7 +68,8 @@ There could be a boolean as to whether have a button with this component as well
 
 
 */
-
+content = {};
+content.children = document.getElementById('children');
 class Input {
 	constructor(name, parent, inputType='text'){
 		this.name = name;
@@ -77,7 +78,6 @@ class Input {
 		this.parentElement = parent
 
 		parent.innerHTML += this.physicality();
-		console.log(this.submitBelief);
 		//this.eventListeners();
 	}
 	/*eventListeners(){
@@ -99,20 +99,35 @@ class Input {
 		`
 	}
 }// I'm not sure how to be going about the data flow in regards to this and so it is something which is a little bit tricky in all honesty. I can be using local storage at the moment, and then I can see about storing it elsewhere, i.e. on firebase--> I don't know why the first event listener is not really working anymore and so I think that this kind of sucks. Do I need a button for each of these? Well I kind of think so, the functionality in this sense would be kind fo different, and each time this is submitted I think it would kind of store this in an array of values, for even beliefs come from a collection of beliefs and so this is kind of similar to each of these and I think it is an array of teachings, or objects and so I think there would be preperties to each of them. 
-function funk(owner){
-console.log('hey')
-console.log(owner)
-}
+
 class Teaching extends Input{
 	constructor(name, parent){
 		super(name, parent, 'text')
-	}
+	};
 
+}
+// I am still worried about data flow, I kind of think that this should be an independent kind of thing. 
+// So this is much more difficult and I kind of just want this to be rendered only when it 
+
+class SubTeaching extends Teaching {
+	constructor(name, parent) {
+		super(name, parent, 'text')
+	}
+	submitBelief(){
+		console.log('this is a kind of test')
+	};
+
+	physicality(){
+		console.log('This is another resr -- test!')
+	};
 }
 const body = document.getElementById('body');
 const Belief = new Input('Belief',body);
-const actions = new Teaching('actions', body)
-const thoughts = new Teaching('thoughts', body)
+const actions = new Teaching('actions', body);
+const thoughts = new Teaching('thoughts', body);
+const service = new Teaching('service', body);
+const pursuits = new Teaching('pursuit', body);
+const subbby = new Teaching('yahh', children)
 // hmm so this is a little bit strange, and so I find it a little bit annoying, and so I do not really know what to be doing about this. So I don't know what to be doing about this at the minute. 
 
-
+// I think helpful/thoughtful comments would be good for me here. 
